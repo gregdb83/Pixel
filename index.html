@@ -49,7 +49,7 @@
     .section{display:none;animation:sectionIn .4s ease both;}
     .section.active{display:block;}
     @keyframes sectionIn{from{opacity:0}to{opacity:1}}
-    .section-title{font-family:'Dancing Script',cursive;font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:800;margin-bottom:2rem;display:flex;align-items:center;gap:1rem;}
+    .section-title{font-family:'Nunito',sans-serif;font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:800;margin-bottom:2rem;display:flex;align-items:center;gap:1rem;}
     .section-title .accent{display:inline-block;width:12px;height:12px;background:linear-gradient(135deg,var(--rouge),var(--orange));border-radius:2px;transform:rotate(45deg);flex-shrink:0;}
 
     /* MEMBRES */
@@ -61,13 +61,13 @@
     .membre-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;}
     .membre-card{background:var(--surface);border:1px solid rgba(232,58,20,.12);border-radius:14px;padding:1.2rem 1.4rem;transition:border-color .2s,transform .2s;}
     .membre-card:hover{border-color:rgba(232,58,20,.4);transform:translateY(-2px);}
-    .membre-card h3{font-family:'Dancing Script',cursive;font-size:1rem;font-weight:700;margin-bottom:.3rem;color:var(--texte);}
+    .membre-card h3{font-family:'Nunito',sans-serif;font-size:1rem;font-weight:700;margin-bottom:.3rem;color:var(--texte);}
     .membre-card p{font-size:.82rem;color:var(--texte-doux);line-height:1.5;}
 
     /* CHARTES */
     .charte-tabs{display:flex;gap:.75rem;margin-bottom:2rem;flex-wrap:wrap;}
     .charte-card{background:var(--surface);border:1px solid rgba(232,58,20,.15);border-radius:20px;padding:2.5rem;margin-bottom:1.5rem;}
-    .charte-card h3{font-family:'Dancing Script',cursive;font-size:1.4rem;font-weight:700;color:var(--orange-clair);margin-bottom:.5rem;}
+    .charte-card h3{font-family:'Nunito',sans-serif;font-size:1.4rem;font-weight:700;color:var(--orange-clair);margin-bottom:.5rem;}
     .charte-card .date{font-size:.8rem;color:var(--texte-doux);letter-spacing:.1em;margin-bottom:1.2rem;}
     .charte-intro{color:var(--texte-doux);line-height:1.7;margin-bottom:1.5rem;font-size:.95rem;}
     .charte-list{list-style:none;display:flex;flex-direction:column;gap:.75rem;}
@@ -84,14 +84,14 @@
     .activite-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--rouge),var(--orange));}
     .activite-card:hover{transform:translateY(-4px);border-color:rgba(232,58,20,.4);}
     .activite-date{font-size:.8rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);margin-bottom:.6rem;}
-    .activite-card h3{font-family:'Dancing Script',cursive;font-size:1.2rem;font-weight:700;margin-bottom:.5rem;}
+    .activite-card h3{font-family:'Nunito',sans-serif;font-size:1.2rem;font-weight:700;margin-bottom:.5rem;}
     .activite-card p{color:var(--texte-doux);font-size:.93rem;line-height:1.6;}
 
     /* MODAL */
     .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(6px);z-index:200;align-items:center;justify-content:center;}
     .modal-overlay.open{display:flex;}
     .modal{background:var(--surface2);border:1px solid rgba(232,58,20,.3);border-radius:20px;padding:2.5rem;width:90%;max-width:500px;animation:sectionIn .3s ease;}
-    .modal h3{font-family:'Dancing Script',cursive;font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;}
+    .modal h3{font-family:'Nunito',sans-serif;font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;}
     .form-group{margin-bottom:1.2rem;}
     .form-group label{display:block;font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--texte-doux);margin-bottom:.4rem;}
     .form-group input,.form-group textarea{width:100%;background:var(--surface);border:1px solid rgba(232,58,20,.2);border-radius:10px;padding:.75rem 1rem;color:var(--texte);font-family:'Nunito',sans-serif;font-size:1rem;transition:border-color .2s;}
@@ -105,8 +105,8 @@
     .rallye-list{display:flex;flex-direction:column;gap:1.5rem;}
     .rallye-card{background:var(--surface);border:1px solid rgba(232,58,20,.15);border-radius:20px;padding:2rem;display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:center;transition:transform .2s,border-color .2s;}
     .rallye-card:hover{transform:translateX(6px);border-color:rgba(232,58,20,.4);}
-    .rallye-num{width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--rouge),var(--orange));display:flex;align-items:center;justify-content:center;font-family:'Dancing Script',cursive;font-size:1.6rem;font-weight:800;flex-shrink:0;}
-    .rallye-info h3{font-family:'Dancing Script',cursive;font-size:1.2rem;font-weight:700;margin-bottom:.3rem;}
+    .rallye-num{width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--rouge),var(--orange));display:flex;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;font-size:1.6rem;font-weight:800;flex-shrink:0;}
+    .rallye-info h3{font-family:'Nunito',sans-serif;font-size:1.2rem;font-weight:700;margin-bottom:.3rem;}
     .rallye-info .meta{font-size:.85rem;color:var(--texte-doux);margin-bottom:.4rem;}
     .rallye-info p{color:var(--texte-doux);font-size:.93rem;line-height:1.6;}
     .badge{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .75rem;border-radius:50px;background:rgba(255,107,26,.15);color:var(--orange-clair);border:1px solid rgba(255,107,26,.3);}
